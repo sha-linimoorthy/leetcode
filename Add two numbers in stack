@@ -11,6 +11,7 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 #         self.val = val
 #         self.next = next
 class Solution(object):
+
     def addTwoNumbers(self, l1, l2):
         """
         :type l1: ListNode
@@ -20,6 +21,7 @@ class Solution(object):
         carry=0
         n1= ListNode()
         now=n1
+        
         while l1 or l2 or carry:
             val_1=l1.val if l1 else 0
             val_2=l2.val if l2 else 0
@@ -35,4 +37,10 @@ class Solution(object):
             l2=l2.next if l2 else None
             
         return n1.next
+            
+            
+            
+            
+            
+            
             
